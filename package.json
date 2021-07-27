@@ -2,14 +2,16 @@
   "name": "@utsubo/branding",
   "version": "1.1.0",
   "description": "utsubo branding package",
-  "repository": "https://github.com/utsuboco/branding",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utsuboco/branding"
+  },
   "author": "Renaud Rohlinger <rohlinger@utsubo.co>",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "release": "vite build && npm version minor --force --access public && npm publish --access public && git add package.json && git commit -m \"bump version\" && git push"
+    "serve": "vite preview"
   },
   "files": [
     "dist"
