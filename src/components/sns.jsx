@@ -1,9 +1,12 @@
 import React from "react";
 import { CONFIG_BRANDING } from "../config";
+import { SnsContainer, SocialLinkStyle } from "./sns-theme";
 
-export function SocialLink({label, url}) {
+export function SocialLink({ theme, label, url }) {
   return (
-    <a href={url} target='_blank'>{label}</a>
+    <SocialLinkStyle className={theme} href={url} target="_blank">
+      {label}
+    </SocialLinkStyle>
   );
 }
 
@@ -18,12 +21,20 @@ export function SocialBar({
 }) {
   return (
     <>
-      <div>
-        {twitter.length > 0 && <SocialLink label="twitter" url={twitter} />}
-        {github.length > 0 && <SocialLink label="github" url={github} />}
-        {youtube.length > 0 && <SocialLink label="youtube" url={youtube} />}
-        {medium.length > 0 && <SocialLink label="medium" url={medium} />}
-      </div>
+      <SnsContainer>
+        {twitter.length > 0 && (
+          <SocialLink theme={theme} label="twitter" url={twitter} />
+        )}
+        {github.length > 0 && (
+          <SocialLink theme={theme} label="github" url={github} />
+        )}
+        {youtube.length > 0 && (
+          <SocialLink theme={theme} label="youtube" url={youtube} />
+        )}
+        {medium.length > 0 && (
+          <SocialLink theme={theme} label="medium" url={medium} />
+        )}
+      </SnsContainer>
     </>
   );
 }
