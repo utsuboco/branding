@@ -1,6 +1,6 @@
 import React from "react";
-import { CONFIG_BRANDING } from "../config";
-import { TutorialContainer, TutorialTitleStyle } from "../tutorial-theme";
+import { CONFIG_BRANDING } from "../../config";
+import { TutorialContainer, TutorialTitleStyle } from "./tutorial.styles";
 
 export function TutorialTitle({
   theme = CONFIG_BRANDING.THEME_DARK,

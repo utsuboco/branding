@@ -1,8 +1,8 @@
 import React from 'react'
-import LogoWhite from '../../static/img/logo-w.svg'
-import LogoBlack from '../../static/img/logo-b.svg'
-import { CONFIG_BRANDING } from '../config';
-import { FooterBaseline, FooterContainer, FooterLink, FooterLogo } from './footer-theme';
+import LogoWhite from '../../../static/img/logo-w.svg'
+import LogoBlack from '../../../static/img/logo-b.svg'
+import { CONFIG_BRANDING } from '../../config';
+import { FooterBaseline, FooterContainer, FooterLink, FooterLogo } from './footer.styles';
 
 export function Footer({
   theme = CONFIG_BRANDING.THEME_DARK,

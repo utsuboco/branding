@@ -1,20 +1,19 @@
-import Head from "next/head";
+import React from 'react'
 
-const titleDefault = "Tutorial by Utsubo Co., Ltd";
+const titleDefault = "Utsubo Co., Ltd";
 const urlDefault = "https://www.utsubo.co/";
 const descriptionDefault =
-  "WebGL/Three.js tutorial by Utsubo Co., Ltd Technology-focused creative agency.";
+  "Utsubo Co., Ltd Technology-focused creative agency.";
 const authorDefault = "Utsubo Co., Ltd";
 
-const Header = ({
+export const HeaderUtsubo = ({
   title = titleDefault,
   url = urlDefault,
   description = descriptionDefault,
   author = authorDefault,
 }) => {
   return (
-    <>
-      <Head>
+      <>
         {/* Recommended Meta Tags */}
         <meta charSet="utf-8" />
         <meta name="language" content="english" />
@@ -58,7 +57,7 @@ const Header = ({
           sizes="180x180"
           href="/icons/apple-touch-icon.png"
         />
-        <link rel="manifest" href="/manifest.json" />
+        {/* <link rel="manifest" href="/manifest.json" /> */}
         <link
           rel="mask-icon"
           color="#000000"
@@ -82,9 +81,6 @@ const Header = ({
         Be sure validate your Twitter card markup on the documentation site. */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@utsuboco" />
-      </Head>
-    </>
+      </>
   );
 };
-
-export default Header;

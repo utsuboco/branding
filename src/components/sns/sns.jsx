@@ -1,6 +1,6 @@
 import React from "react";
-import { CONFIG_BRANDING } from "../config";
-import { SnsContainer, SocialLinkStyle } from "./sns-theme";
+import { CONFIG_BRANDING } from "../../config";
+import { SnsContainer, SocialLinkStyle } from "./sns.styles";
 
 export function SocialLink({ theme, label, url }) {
   return (

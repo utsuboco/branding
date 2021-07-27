@@ -1,5 +1,5 @@
 import React from 'react'
-import { CONFIG_BRANDING } from '../config';
+import { CONFIG_BRANDING } from '../../config';
 
 export function Logo({ theme = CONFIG_BRANDING.THEME_DARK, ...props }) {
   return (
