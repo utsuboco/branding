@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "release": "vite build && npm version minor && npm publish"
+    "release": "vite build && npm version minor && npm publish && git add package.json && git commit -m \"bump version\" && git push"
   },
   "files": [
     "dist"
