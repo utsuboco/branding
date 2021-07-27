@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Logo } from '../src/main'
+import { Footer, Logo, SocialBar, TutorialTitle } from '../src/main'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Logo />
+    <TutorialTitle number={'01'} />
+    <SocialBar />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 )
