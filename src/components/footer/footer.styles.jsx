@@ -1,11 +1,11 @@
-import { styled } from "@stitches/react";
+import { styled } from "../../../stitches.config";
 
 export const FooterContainer = styled("div", {
   fontFamily: "Switzer, Helvetica, sans-serif",
   position: "fixed",
   pointerEvents: "none",
-  bottom: "30px",
-  right: "30px",
+  bottom: "20px",
+  right: "20px",
   "&.dark a": {
     color: "#2d2d2d",
   },
@@ -15,6 +15,10 @@ export const FooterContainer = styled("div", {
   "& a": {
     pointerEvents: "all",
     display: "block",
+  },
+  "@md": {
+    bottom: "30px",
+    right: "30px",
   },
 });
 
@@ -64,7 +68,7 @@ export const FooterBaseline = styled("p", {
   padding: "0",
   margin: "0",
   opacity: "0",
-  transition: "opacity 0.5s ease",
+  transition: "opacity 0.3s ease",
   "& .sptbr": {
     position: "relative",
     display: "inline-block",
