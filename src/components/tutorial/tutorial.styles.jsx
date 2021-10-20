@@ -28,3 +28,14 @@ export const TutorialTitleStyle = styled("h2", {
     fontSize: "26px",
   },
 });
+
+export const TutorialDescriptionStyle = styled("p", {
+  userSelect: "none",
+  fontSize: "14px",
+  fontWeight: "bold",
+  padding: "0",
+  margin: "0",
+  "@md": {
+    fontSize: "16px",
+  },
+});
